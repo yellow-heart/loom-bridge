@@ -74,7 +74,7 @@ var cliOptions = {
   'BLOCKCHAIN_BASE_UNIT': BLOCKCHAIN_BASE_UNIT,
   'KEY_FILE_PATH': keyFilePath,
   'BRIDGE_NAME': BRIDGE_NAME,
-  'DEFAULT_NODE': 'localhost:8545',
+  'DEFAULT_NODE': 'localhost:46658',
   'BRIDGE_VERSION': BRIDGE_VERSION
 }
 
@@ -1274,7 +1274,7 @@ process.on('exit', function () {
     var oracleInstanceTemp = JSON.parse(fs.readFileSync(oracleInstancePath).toString())
     oracleInstanceTemp.latest_block_number = activeOracleInstance.latestBlockNumber
     fs.writeFileSync(oracleInstancePath, JSON.stringify(oracleInstanceTemp, null, 4))
-    if (cliConfiguration['no-hints'] === false) console.log('To load this instance again: ethereum-bridge --instance ' + currentInstance)
+    if (cliConfiguration['no-hints'] === false) console.log('To load this instance again: loom-bridge --instance ' + currentInstance)
   }
   console.log('Exiting...')
 })

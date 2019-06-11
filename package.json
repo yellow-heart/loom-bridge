@@ -1,10 +1,10 @@
 {
-  "name": "ethereum-bridge",
+  "name": "loom-bridge",
   "version": "0.6.2",
   "description": "Ethereum logs listener to connect Oraclize onchain events to the Oraclize offchain engine",
   "main": "bridge.js",
   "bin": {
-    "ethereum-bridge": "bridge.js"
+    "loom-bridge": "bridge.js"
   },
   "keywords": [
     "oraclize",
@@ -40,7 +40,9 @@
     "underscore": "^1.8.3",
     "utf8": "^2.1.2",
     "web3": "0.19.1",
-    "winston": "^2.3.1"
+    "winston": "^2.3.1",
+    "loom-js": "1.38.0",
+    "loom-truffle-provider": "^0.11.0"
   },
   "devDependencies": {
     "standard": "*"
@@ -54,7 +56,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/oraclize/ethereum-bridge.git"
+    "url": "https://github.com/yellow-heart/loom-bridge.git"
   },
   "author": "Oraclize Ltd.",
   "license": "AGPL-3.0"

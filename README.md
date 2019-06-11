@@ -11,20 +11,20 @@ _Please note that at this point this tool is still **experimental** and subject 
 
 run `sudo apt-get install build-essential -y`
 
-You should run the following commands from within the ethereum-bridge folder.
+You should run the following commands from within the loom-bridge folder.
 
 ### Install
 
 via git
 ```
-git clone https://github.com/oraclize/ethereum-bridge.git
-cd ethereum-bridge
+git clone https://github.com/yellow-heart/loom-bridge.git
+cd loom-bridge
 npm install
 ```
 
 via npm
 ```
-npm install -g ethereum-bridge
+npm install -g loom-bridge
 ```
 
 ### How to use
@@ -43,7 +43,7 @@ see also [optional flags](#optional-flags)
 #### Active mode
 
 ```
-ethereum-bridge -H localhost:8545 -a 1
+loom-bridge -H localhost:8545 -a 1
 ```
 (deploy contracts using the account 1 found on the localhost:8545 node)
 
@@ -53,14 +53,14 @@ ethereum-bridge -H localhost:8545 -a 1
 Generate a new local address:
 
 ```
-ethereum-bridge -H localhost:8545 --broadcast --new
+loom-bridge -H localhost:8545 --broadcast --new
 ```
 (generate a new address locally and deploy contracts (txs broadcasted to localhost:8545 node))
 
 or if you already have one or more account in your keys.json file:
 
 ```
-ethereum-bridge -H localhost:8545 --broadcast -a 0
+loom-bridge -H localhost:8545 --broadcast -a 0
 ```
 (load the first account in your keys.json file (index n.0) and deploy contracts (txs broadcasted to localhost:8545 node))
 
